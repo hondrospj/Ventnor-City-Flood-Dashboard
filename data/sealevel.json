@@ -6,9 +6,29 @@
   "source": "USGS daily mean",
   "updated_utc": "2026-06-30T15:24:09.843Z",
   "regression": {
-    "slopeFtPerYear": 0.02076080619081057,
-    "interceptFt": -41.733590049354724,
-    "monthlyPoints": 285
+    "slopeFtPerYear": 0.020755237372302362,
+    "interceptFt": -41.72237096836763,
+    "monthlyPoints": 285,
+    "method": "deseasonalized_monthly_mean_linear_regression",
+    "rawRegression": {
+      "slopeFtPerYear": 0.02076080619147386,
+      "interceptFt": -41.73359005069101,
+      "monthlyPoints": 285
+    },
+    "seasonalAdjustmentsFt": {
+      "01": -0.280607,
+      "02": -0.299032,
+      "03": -0.165458,
+      "04": -0.04228,
+      "05": 0.024665,
+      "06": 0.112535,
+      "07": 0.073177,
+      "08": 0.159755,
+      "09": 0.361151,
+      "10": 0.327013,
+      "11": -0.022326,
+      "12": -0.223839
+    }
   },
   "daily": [
     {
@@ -35442,5 +35462,37 @@
       "ft": 0.3803,
       "days": 29
     }
-  ]
+  ],
+  "regressionRaw": {
+    "slopeFtPerYear": 0.02076080619147386,
+    "interceptFt": -41.73359005069101,
+    "monthlyPoints": 285
+  },
+  "regressionDeseasonalized": {
+    "slopeFtPerYear": 0.020755237372302362,
+    "interceptFt": -41.72237096836763,
+    "monthlyPoints": 285,
+    "method": "deseasonalized_monthly_mean_linear_regression",
+    "rawRegression": {
+      "slopeFtPerYear": 0.02076080619147386,
+      "interceptFt": -41.73359005069101,
+      "monthlyPoints": 285
+    },
+    "seasonalAdjustmentsFt": {
+      "01": -0.280607,
+      "02": -0.299032,
+      "03": -0.165458,
+      "04": -0.04228,
+      "05": 0.024665,
+      "06": 0.112535,
+      "07": 0.073177,
+      "08": 0.159755,
+      "09": 0.361151,
+      "10": 0.327013,
+      "11": -0.022326,
+      "12": -0.223839
+    }
+  },
+  "trendMethod": "deseasonalized_monthly_mean_linear_regression",
+  "regression_updated_utc": "2026-07-01T02:02:03.933083+00:00"
 }
