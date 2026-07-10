@@ -4,9 +4,9 @@
   "datum": "NAVD88",
   "peakMinSepMinutes": 300,
   "thresholdsNAVD88": {
-    "minorLow": 3.5,
-    "moderateLow": 4.5,
-    "majorLow": 5.5
+    "minorLow": 3.51,
+    "moderateLow": 4.51,
+    "majorLow": 5.51
   },
   "method": "crest_anchored_highs_v1",
   "lastProcessedISO": "2026-07-06T13:48:00.000Z",
