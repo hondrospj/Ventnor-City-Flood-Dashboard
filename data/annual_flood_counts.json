@@ -4,176 +4,151 @@
       "year": 2002,
       "minor": 2,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 13
+      "major": 0
     },
     {
       "year": 2003,
       "minor": 10,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 34
+      "major": 0
     },
     {
       "year": 2004,
       "minor": 5,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 33
+      "major": 0
     },
     {
       "year": 2005,
       "minor": 12,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 47
+      "major": 0
     },
     {
       "year": 2006,
       "minor": 12,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 35
+      "major": 0
     },
     {
       "year": 2007,
       "minor": 11,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 20
+      "major": 0
     },
     {
       "year": 2008,
       "minor": 12,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 25
+      "major": 0
     },
     {
       "year": 2009,
       "minor": 21,
       "moderate": 5,
-      "major": 0,
-      "nearFlood": 36
+      "major": 0
     },
     {
       "year": 2010,
       "minor": 22,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 77
+      "major": 0
     },
     {
       "year": 2011,
       "minor": 20,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 58
+      "major": 0
     },
     {
       "year": 2012,
       "minor": 17,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": 40
+      "major": 0
     },
     {
       "year": 2013,
       "minor": 15,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 35
+      "major": 0
     },
     {
       "year": 2014,
       "minor": 14,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 36
+      "major": 0
     },
     {
       "year": 2015,
       "minor": 13,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 36
+      "major": 0
     },
     {
       "year": 2016,
       "minor": 19,
       "moderate": 5,
-      "major": 0,
-      "nearFlood": 49
+      "major": 0
     },
     {
       "year": 2017,
       "minor": 22,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": 41
+      "major": 0
     },
     {
       "year": 2018,
       "minor": 33,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": 44
+      "major": 0
     },
     {
       "year": 2019,
       "minor": 25,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": 83
+      "major": 0
     },
     {
       "year": 2020,
       "minor": 27,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 66
+      "major": 0
     },
     {
       "year": 2021,
       "minor": 20,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": 70
+      "major": 0
     },
     {
       "year": 2022,
       "minor": 6,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 7
+      "major": 0
     },
     {
       "year": 2023,
       "minor": 33,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 79
+      "major": 0
     },
     {
       "year": 2024,
       "minor": 54,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": 84
+      "major": 0
     },
     {
       "year": 2025,
       "minor": 21,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": 81
+      "major": 0
     },
     {
       "year": 2026,
       "minor": 11,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": 27
+      "major": 0
     }
   ],
   "fallback": [
@@ -181,806 +156,691 @@
       "year": 1911,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1912,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1913,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1914,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1915,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1916,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1917,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1918,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1919,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1920,
       "minor": 3,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1921,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1922,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1923,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1924,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1925,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1926,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1927,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1928,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1929,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1930,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1931,
       "minor": 3,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1932,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1933,
       "minor": 7,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1934,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1935,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1936,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1937,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1938,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1939,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1940,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1941,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1942,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1943,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1944,
       "minor": 1,
       "moderate": 1,
-      "major": 1,
-      "nearFlood": null
+      "major": 1
     },
     {
       "year": 1945,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1946,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1947,
       "minor": 1,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1948,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1949,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1950,
       "minor": 2,
       "moderate": 0,
-      "major": 1,
-      "nearFlood": null
+      "major": 1
     },
     {
       "year": 1951,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1952,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1953,
       "minor": 2,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1954,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1955,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1956,
       "minor": 3,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1957,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1958,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1959,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1960,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1961,
       "minor": 11,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1962,
       "minor": 4,
       "moderate": 1,
-      "major": 3,
-      "nearFlood": null
+      "major": 3
     },
     {
       "year": 1963,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1964,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1965,
       "minor": 1,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1966,
       "minor": 0,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1967,
       "minor": 6,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1968,
       "minor": 5,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1969,
       "minor": 3,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1970,
       "minor": null,
       "moderate": null,
-      "major": null,
-      "nearFlood": null
+      "major": null
     },
     {
       "year": 1971,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1972,
       "minor": 9,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1973,
       "minor": 7,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1974,
       "minor": 6,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1975,
       "minor": 0,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1976,
       "minor": 1,
       "moderate": 0,
-      "major": 1,
-      "nearFlood": null
+      "major": 1
     },
     {
       "year": 1977,
       "minor": 4,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1978,
       "minor": 5,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1979,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1980,
       "minor": 4,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1981,
       "minor": 3,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1982,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1983,
       "minor": 7,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1984,
       "minor": 6,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1985,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1986,
       "minor": 8,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1987,
       "minor": 5,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1988,
       "minor": 2,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1989,
       "minor": 7,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1990,
       "minor": 6,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1991,
       "minor": 6,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1992,
       "minor": 10,
       "moderate": 8,
-      "major": 1,
-      "nearFlood": null
+      "major": 1
     },
     {
       "year": 1993,
       "minor": 25,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1994,
       "minor": 5,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1995,
       "minor": 6,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1996,
       "minor": 19,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1997,
       "minor": 15,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1998,
       "minor": 15,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 1999,
       "minor": 4,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2000,
       "minor": 9,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2001,
       "minor": 11,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2002,
       "minor": 7,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2003,
       "minor": 12,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2004,
       "minor": 9,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2005,
       "minor": 21,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2006,
       "minor": 15,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2007,
       "minor": 19,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2008,
       "minor": 17,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2009,
       "minor": 30,
       "moderate": 5,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2010,
       "minor": 34,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2011,
       "minor": 25,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2012,
       "minor": 25,
       "moderate": 1,
-      "major": 2,
-      "nearFlood": null
+      "major": 2
     },
     {
       "year": 2013,
       "minor": 24,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2014,
       "minor": 29,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2015,
       "minor": 12,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2016,
       "minor": 33,
       "moderate": 4,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2017,
       "minor": 36,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2018,
       "minor": 43,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2019,
       "minor": 34,
       "moderate": 3,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2020,
       "minor": 40,
       "moderate": 1,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2021,
       "minor": 33,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2022,
       "minor": 31,
       "moderate": 4,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2023,
       "minor": 56,
       "moderate": 2,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2024,
       "minor": 64,
       "moderate": 5,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     },
     {
       "year": 2025,
       "minor": 28,
       "moderate": 0,
-      "major": 0,
-      "nearFlood": null
+      "major": 0
     }
   ]
 }
