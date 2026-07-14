@@ -3535,10 +3535,14 @@ function updateFloodOutlook48(){
 function manualHistoricRowsNavd(){
   return TOP_TEN_MLLW.map((r, i)=>{
     const parts = String(r.date || "").split("-");
-    const iso = parts.length === 3 ? `${parts[2]}-${parts[0]}-${parts[1]}T12:00:00Z` : null;
+    const localDate = parts.length === 3
+      ? `${parts[2]}-${parts[0].padStart(2, "0")}-${parts[1].padStart(2, "0")}`
+      : "";
+    const iso = localDate ? `${localDate}T12:00:00Z` : null;
     return {
       t: iso,
       ft: mllwToNavd(Number(r.ft)),
+      localDate,
       manual:true,
       manualDate:r.date,
       manualRank:i + 1
@@ -3547,6 +3551,7 @@ function manualHistoricRowsNavd(){
 }
 
 function historicDateKey(r){
+  if(/^\d{4}-\d{2}-\d{2}$/.test(String(r?.localDate || ""))) return String(r.localDate);
   if(r?.t) return String(r.t).slice(0, 10);
   const parts = String(r?.manualDate || "").split("-");
   if(parts.length === 3){
@@ -3555,17 +3560,26 @@ function historicDateKey(r){
   return String(r?.manualDate || "");
 }
 
+function historicRowPriority(r){
+  if(r?.officialCrestOverride) return 3;
+  if(!r?.manual) return 2;
+  return 1;
+}
+
 function combinedHistoricRowsNavd(){
-  const rows = [];
-  const seen = new Set();
+  const bestByDate = new Map();
   for(const r of [...manualHistoricRowsNavd(), ...(HIGH_TIDES_NAVD || [])]){
-    const tKey = historicDateKey(r);
-    const key = `${tKey}|${Number(r.ft).toFixed(2)}`;
-    if(seen.has(key)) continue;
-    seen.add(key);
-    rows.push(r);
+    const dateKey = historicDateKey(r);
+    const ft = Number(r?.ft);
+    if(!dateKey || !Number.isFinite(ft)) continue;
+    const existing = bestByDate.get(dateKey);
+    const priority = historicRowPriority(r);
+    const existingPriority = historicRowPriority(existing);
+    if(!existing || priority > existingPriority || (priority === existingPriority && ft > Number(existing.ft))){
+      bestByDate.set(dateKey, r);
+    }
   }
-  rows.sort((a,b)=>b.ft-a.ft);
+  const rows = Array.from(bestByDate.values()).sort((a,b)=>Number(b.ft)-Number(a.ft));
   rows.forEach((r, i)=>{ r.rank = i + 1; });
   return rows;
 }
@@ -5987,12 +6001,14 @@ function updateTsChartFromState(){
   yMin = Math.floor(yMin / STEP) * STEP;
   yMax = Math.ceil(yMax / STEP) * STEP;
   if(Number.isFinite(requiredMajorHeadroomFt)){
-    yMax = Math.max(yMax, requiredMajorHeadroomFt);
+    yMax = Math.max(yMax, Math.ceil(requiredMajorHeadroomFt / STEP) * STEP);
   }
 
   tsChart.options.scales.y.min = yMin;
   tsChart.options.scales.y.max = yMax;
   tsChart.options.scales.y.ticks.stepSize = STEP;
+  tsChart.options.scales.y.ticks.precision = 0;
+  tsChart.options.scales.y.ticks.callback = value => Number(value).toFixed(0);
 
   delete tsChart.options.scales.x.min;
   delete tsChart.options.scales.x.max;
@@ -7928,7 +7944,7 @@ function renderHist(rowsNavd){
     histBody.appendChild(tr);
   }
 
-  histMeta.textContent = `Showing ${Math.min(limit, rowsNavd.length)} of ${rowsNavd.length.toLocaleString()}`;
+  histMeta.textContent = `Showing ${Math.min(limit, rowsNavd.length)} of ${rowsNavd.length.toLocaleString()} daily maxima · Local observations with official USGS annual crest overrides.`;
 }
 
 function applyFilter(){
@@ -8358,8 +8374,17 @@ function normalizePeaksJson(json){
       t: dt.toISOString(),
       ft,
       y, m, d,
+      localDate: /^\d{4}-\d{2}-\d{2}$/.test(String(r?.localDate || "")) ? String(r.localDate) : null,
       kind: r?.kind ?? r?.type ?? "Peak",
-      source: "JSON"
+      source: r?.historySource ?? r?.source ?? "JSON",
+      officialCrestOverride: Boolean(r?.officialCrestOverride),
+      officialCrestOnly: Boolean(r?.officialCrestOnly),
+      officialCrestSourceSite: r?.officialCrestSourceSite ?? "",
+      officialCrestSourceName: r?.officialCrestSourceName ?? "",
+      officialCrestDistanceMiles: Number.isFinite(Number(r?.officialCrestDistanceMiles)) ? Number(r.officialCrestDistanceMiles) : null,
+      officialCrestExactGauge: Boolean(r?.officialCrestExactGauge),
+      officialCrestReportedTime: r?.officialCrestReportedTime ?? "",
+      officialCrestQualificationCodes: r?.officialCrestQualificationCodes ?? ""
     });
   }
   return out;
