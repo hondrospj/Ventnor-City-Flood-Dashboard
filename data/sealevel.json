@@ -4,35 +4,76 @@
   "parameter": "72279",
   "datum": "NAVD88",
   "source": "USGS daily mean",
+  "stationSelection": null,
+  "officialTrend": {
+    "station": "8534720",
+    "stationName": "Atlantic City",
+    "startYear": 1911,
+    "endYear": 2025,
+    "millimetersPerYear": 4.25,
+    "standardErrorMillimetersPerYear": 0.15,
+    "slopeFtPerYear": 0.013943569553805773,
+    "source": "https://tidesandcurrents.noaa.gov/sltrends/slmap.xml"
+  },
   "qualityControl": {
     "minimumDailyValuesPerMonth": 20,
     "excludedMonths": [],
     "method": "Exclude incomplete USGS months and configured station discontinuities from trend analysis"
   },
-  "updated_utc": "2026-07-23T13:41:02.021Z",
+  "updated_utc": "2026-08-03T00:10:40.057Z",
   "regression": {
-    "slopeFtPerYear": 0.02099741231745577,
-    "interceptFt": -42.20546578070173,
+    "slopeFtPerYear": 0.013943569553805773,
+    "interceptFt": -27.993113519263222,
     "monthlyPoints": 280,
-    "method": "deseasonalized_monthly_mean_linear_regression",
-    "rawRegression": {
-      "slopeFtPerYear": 0.020163199176622546,
-      "interceptFt": -40.524686441052495,
-      "monthlyPoints": 280
+    "method": "NOAA_official_linear_relative_mean_sea_level_trend",
+    "officialTrend": {
+      "station": "8534720",
+      "stationName": "Atlantic City",
+      "startYear": 1911,
+      "endYear": 2025,
+      "millimetersPerYear": 4.25,
+      "standardErrorMillimetersPerYear": 0.15,
+      "slopeFtPerYear": 0.013943569553805773,
+      "source": "https://tidesandcurrents.noaa.gov/sltrends/slmap.xml"
+    },
+    "calculatedRegression": {
+      "slopeFtPerYear": 0.021049899976426534,
+      "interceptFt": -42.311005123486126,
+      "monthlyPoints": 280,
+      "method": "deseasonalized_monthly_mean_linear_regression",
+      "rawRegression": {
+        "slopeFtPerYear": 0.020216533518828142,
+        "interceptFt": -40.63193168802214,
+        "monthlyPoints": 280
+      },
+      "seasonalAdjustmentsFt": {
+        "10": 0.321678,
+        "11": -0.027615,
+        "12": -0.229083,
+        "01": -0.300869,
+        "02": -0.309762,
+        "03": -0.170566,
+        "04": -0.047342,
+        "05": 0.019648,
+        "06": 0.107522,
+        "07": 0.071062,
+        "08": 0.154602,
+        "09": 0.356044
+      }
     },
     "seasonalAdjustmentsFt": {
-      "10": 0.321864,
-      "11": -0.027425,
-      "12": -0.228888,
-      "01": -0.300585,
-      "02": -0.309542,
-      "03": -0.170358,
-      "04": -0.04713,
-      "05": 0.019865,
-      "06": 0.107743,
-      "07": 0.0688,
-      "08": 0.154806,
-      "09": 0.356251
+      "10": 0.321678,
+      "11": -0.027615,
+      "12": -0.229083,
+      "01": -0.300869,
+      "02": -0.309762,
+      "03": -0.170566,
+      "04": -0.047342,
+      "05": 0.019648,
+      "06": 0.107522,
+      "07": 0.071062,
+      "08": 0.154602,
+      "09": 0.356044
     }
   },
   "daily": [
@@ -34131,6 +34172,46 @@
     {
       "date": "2026-07-22",
       "ft": 0.31
+    },
+    {
+      "date": "2026-07-23",
+      "ft": 0.21
+    },
+    {
+      "date": "2026-07-24",
+      "ft": 0.26
+    },
+    {
+      "date": "2026-07-25",
+      "ft": 0.62
+    },
+    {
+      "date": "2026-07-26",
+      "ft": 0.75
+    },
+    {
+      "date": "2026-07-27",
+      "ft": 0.62
+    },
+    {
+      "date": "2026-07-28",
+      "ft": 0.71
+    },
+    {
+      "date": "2026-07-29",
+      "ft": 0.86
+    },
+    {
+      "date": "2026-07-30",
+      "ft": 0.88
+    },
+    {
+      "date": "2026-07-31",
+      "ft": 0.72
+    },
+    {
+      "date": "2026-08-01",
+      "ft": 0.5
     }
   ],
   "monthly": [
@@ -35531,8 +35612,15 @@
     },
     {
       "month": "2026-07",
-      "ft": 0.42,
-      "days": 22
+      "ft": 0.4797,
+      "days": 31
     }
-  ]
+  ],
+  "trendStationSelection": {
+    "method": "Use the first configured nearby NOAA station with an official long-term relative sea-level trend",
+    "candidates": [
+      "8534720"
+    ],
+    "selected": "8534720"
+  }
 }
