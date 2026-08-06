@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: peaks-cache
+  group: peaks-cache-ventnor-city
   cancel-in-progress: true
 
 jobs:
