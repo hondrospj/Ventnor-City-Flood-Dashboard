@@ -1,0 +1,44 @@
+{
+  "name": "Roads at Risk - Ventnor City DEM",
+  "source": "USGS 3DEP Bare Earth DEM Dynamic ImageServer",
+  "sourceUrl": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+  "sourceDescription": "USGS 3D Elevation Program (3DEP) Bare Earth DEM Dynamic service; service metadata says data available as of 2026-07-20; checked 2026-08-06.",
+  "downloadedAt": "2026-08-06",
+  "processing": "Exported from USGS 3DEP at city extent, masked to the Ventnor City boundary, resampled to 1.524 m / 5 ft pixels, compressed as Cloud Optimized GeoTIFF.",
+  "horizontalCrs": "EPSG:3857",
+  "verticalUnits": "meters",
+  "displayElevationUnits": "feet",
+  "pixelSizeMeters": 1.524,
+  "pixelSizeFeet": 4.99999999998,
+  "width": 3098,
+  "height": 2655,
+  "nodata": -999999,
+  "minMeters": -0.99730759859085,
+  "maxMeters": 5.275773525238,
+  "meanMeters": 0.99362614048989,
+  "stdDevMeters": 1.3546239997718,
+  "minFeet": -3.2720065570435066,
+  "maxFeet": 17.30896825858562,
+  "webMercatorBounds": [
+    -8294018.182383,
+    4769125.264646,
+    -8289296.830383,
+    4773171.484646
+  ],
+  "leafletBounds": [
+    [
+      39.3305085,
+      -74.506433
+    ],
+    [
+      39.358618,
+      -74.4640204
+    ]
+  ],
+  "files": {
+    "demCog": "ventnor_city_dem_5ft_cog.tif",
+    "hillshadeCog": "ventnor_city_hillshade_cog.tif",
+    "hillshadePng": "ventnor_city_hillshade.png",
+    "boundaryGeojson": "ventnor_city_boundary.geojson"
+  }
+}
