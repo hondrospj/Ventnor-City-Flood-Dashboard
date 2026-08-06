@@ -3439,7 +3439,7 @@ function unitText(){
 }
 
 function renderGaugeStaticText(){
-  const dashboardTitle = `${GAUGE_DISPLAY_NAME} Coastal Flooding Dashboard`;
+  const dashboardTitle = `${DASHBOARD_DISPLAY_NAME} Coastal Flooding Dashboard`;
   document.title = dashboardTitle;
   if(brandKickerEl) brandKickerEl.textContent = `${DEFAULT_GAUGE_ID} · ${GAUGE_DISPLAY_NAME}, NJ`;
   if(brandNameEl) brandNameEl.textContent = dashboardTitle;
@@ -3781,6 +3781,15 @@ function fmtHistoricDate(r){
   if(r?.t) return fmtNiceDate(r.t);
   const tKey = historicDateKey(r);
   return tKey ? fmtNiceDate(`${tKey}T12:00:00Z`) : "";
+}
+
+function escapeHTML(value){
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function normalizePetssJsonToPoints(json){
@@ -8226,12 +8235,13 @@ function renderHist(rowsNavd){
   for(const r of show){
     const tag  = stageTagByNavd(r.ft);
     const disp = toDisplayFtFromNavd(r.ft);
+    const label = r.event ? `${escapeHTML(r.event)} · ${tag.txt}` : tag.txt;
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${fmtHistoricDate(r)}</td>
       <td><b>#${r.rank || ""}</b></td>
       <td><b>${disp.toFixed(2)}</b></td>
-      <td><span class="tag"><span class="chip" style="background:${tag.c}"></span>${tag.txt}</span></td>
+      <td><span class="tag"><span class="chip" style="background:${tag.c}"></span>${label}</span></td>
     `;
     histBody.appendChild(tr);
   }
@@ -8803,6 +8813,7 @@ refreshDOYFromHistory();
 }
 
 
+const DASHBOARD_DISPLAY_NAME = "Ventnor City";
 const GAUGE_DISPLAY_NAME = "Inside Thorofare at Atlantic City";
 const GAUGE_TYPE = "USGS";
 const JURISDICTION_SOURCE = "Atlantic City";
@@ -8819,7 +8830,7 @@ const NOAA_STATION_TIDECLOCK = "8534720";
 const CREST_WINDOW_HOURS = 2;
 const REQUIRE_WITHIN_HOURS = 1;
 const LIVE_START_ISO = "2026-01-01T00:00:00Z";
-const ALERT_POINT = {"lat":39.0,"lon":-74.7};
+const ALERT_POINT = {"lat":39.3445643,"lon":-74.4852312};
 let DISPLAY_DATUM = "MLLW";
 const DATUMS = ["MLLW","NAVD88","MSL","MHHW"];
 const OFFSET_FROM_MLLW = {"MLLW":0.0,"NAVD88":-2.39,"MSL":-2.12,"MHHW":-4.45};
