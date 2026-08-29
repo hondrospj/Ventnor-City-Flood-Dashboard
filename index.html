@@ -2806,11 +2806,11 @@ a.brand *{
 
     <div class="accBody">
       <div class="filterRow historicControls">
-        <input class="input" id="minElev" type="number" step="0.01" placeholder="Min (ft)" />
-        <input class="input" id="maxElev" type="number" step="0.01" placeholder="Max (ft)" />
-        <input class="input" id="fromDate" type="date" autocomplete="off" />
-        <input class="input" id="toDate" type="date" autocomplete="off" />
-        <select id="sortMode">
+        <input class="input" id="minElev" type="number" step="0.01" placeholder="Min (ft)" aria-label="Minimum historic flood elevation in feet" />
+        <input class="input" id="maxElev" type="number" step="0.01" placeholder="Max (ft)" aria-label="Maximum historic flood elevation in feet" />
+        <input class="input" id="fromDate" type="date" autocomplete="off" aria-label="Historic flood start date" />
+        <input class="input" id="toDate" type="date" autocomplete="off" aria-label="Historic flood end date" />
+        <select id="sortMode" aria-label="Historic tide sort order">
           <option value="desc">Highest first</option>
           <option value="asc">Lowest first</option>
           <option value="recent">Most recent</option>
