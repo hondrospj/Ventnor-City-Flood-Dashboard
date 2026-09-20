@@ -1,0 +1,11 @@
+{
+  "schema": "nj-flood-dashboard-gauge-pipeline-v2",
+  "releaseVersion": "20260920-nj-universal-v2",
+  "floodmapperRepo": "Ventnor-City-floodmapper",
+  "primaryUsgsGaugeId": "01410560",
+  "noaaStationId": "8534720",
+  "noaaRegion": "atlantic-city",
+  "noaaBiasCorrectionFt": 0.136,
+  "crestUsgsStationId": "01410560",
+  "calibrationPairKey": "01410560:atlantic-city"
+}

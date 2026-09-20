@@ -8832,7 +8832,7 @@ const DEFAULT_GAUGE_ZOOM = 12;
 const USGS_SITE = "01410560";
 const USGS_PARAM_PRIMARY = "72279";
 const NOAA_OBS_STATION = "8534720";
-const NOAA_STATION_CANDIDATES = ["8534720","8534720","8534720"];
+const NOAA_STATION_CANDIDATES = ["8534720"];
 const NOAA_SEA_LEVEL_STATION_CANDIDATES = ["8534720"];
 const COOPS_STATION = "8534720";
 const COOPS_APP = "cupajoe.live";
@@ -8843,9 +8843,9 @@ const LIVE_START_ISO = "2026-01-01T00:00:00Z";
 const ALERT_POINT = {"lat":39.3445643,"lon":-74.4852312};
 let DISPLAY_DATUM = "MLLW";
 const DATUMS = ["MLLW","NAVD88","MSL","MHHW"];
-const OFFSET_FROM_MLLW = {"MLLW":0.0,"NAVD88":-2.39,"MSL":-2.12,"MHHW":-4.45};
-const THRESH = {"MLLW":{"minorLow":5.9,"moderateLow":6.9,"majorLow":7.9},"NAVD88":{"minorLow":3.51,"moderateLow":4.51,"majorLow":5.51},"MSL":{"minorLow":3.78,"moderateLow":4.78,"majorLow":5.78},"MHHW":{"minorLow":1.45,"moderateLow":2.45,"majorLow":3.45}};
-const TOP_TEN_MLLW = [{"date":"10-27-2018","ft":7.79},{"date":"01-23-2016","ft":7.63},{"date":"08-22-2025","ft":7.6},{"date":"10-13-2025","ft":7.46},{"date":"11-13-2009","ft":7.44},{"date":"01-24-2016","ft":7.35},{"date":"02-02-2021","ft":7.34},{"date":"10-12-2019","ft":7.2},{"date":"09-10-2018","ft":7.2},{"date":"01-24-2016","ft":7.17}];
+const OFFSET_FROM_MLLW = {"MLLW":0,"NAVD88":-2.39,"MSL":-2.12,"MHHW":-4.45};
+const THRESH = {"MLLW":{"minorLow":5.6,"moderateLow":6.6,"majorLow":7.6},"NAVD88":{"minorLow":3.21,"moderateLow":4.21,"majorLow":5.21},"MSL":{"minorLow":3.78,"moderateLow":4.78,"majorLow":5.78},"MHHW":{"minorLow":1.45,"moderateLow":2.45,"majorLow":3.45}};
+const TOP_TEN_MLLW = [{"date":"10-29-2012","ft":10.01},{"date":"03-06-1962","ft":8.89},{"date":"11-13-2009","ft":7.44},{"date":"06-04-2012","ft":7.05},{"date":"12-09-2014","ft":7.03},{"date":"12-25-2002","ft":7},{"date":"10-07-2006","ft":6.94},{"date":"05-25-2005","ft":6.91},{"date":"12-06-2003","ft":6.87},{"date":"08-27-2011","ft":6.87}];
 const GAUGES = [
   {
     "name": "Absecon Creek at Absecon",
@@ -9194,6 +9194,7 @@ const PETSS_JSON_CANDIDATES = [
   `/data/petss_forecast_${COOPS_STATION}_mllw.json`
 ];
 const PEAKS_JSON_FILE = "peaks_navd88.json";
+const FLOODMAPPER_V2_PIPELINE = {"releaseVersion":"20260920-nj-universal-v2","primaryUsgsGaugeId":"01410560","noaaStationId":"8534720","noaaBiasCorrectionFt":0.136,"crestUsgsStationId":"01410560","sourcePrecedence":["primary-usgs-continuous","bias-corrected-noaa-historical-fill","official-usgs-storm-tide-crest-override"]};
 const PEAKS_JSON_PATH_CANDIDATES = [
   `data/${PEAKS_JSON_FILE}`,
   `./data/${PEAKS_JSON_FILE}`,
