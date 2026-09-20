@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Crest-anchored NAVD88 "high tide events" builder for USGS 01412150 (param 72279)
+ * Crest-anchored NAVD88 "high tide events" builder for USGS 01410560 (param 72279)
  * - Uses NOAA CO-OPS predicted HIGH tide crest times (interval=hilo, type=H) as the "tide clock"
  * - For each predicted HIGH tide crest:
  *    - Search observed USGS IV points within ±2 hours and take the MAX
@@ -31,7 +31,7 @@ const SITE = "01410560";
 const PARAM = "72279";
 
 // NOAA tide-clock (predicted highs/lows) — used ONLY for crest times
-const NOAA_STATION = "8534720"; // Atlantic City, NJ
+const NOAA_STATION = "8534720"; // regional NOAA tide clock
 
 // Keep this in cache for transparency; we still keep your 5-hour constant in JSON,
 // but we are no longer using declustering for cache building under this method.
@@ -45,7 +45,7 @@ const CREST_WINDOW_HOURS = 2;      // search max within ±2h of predicted crest
 const REQUIRE_WITHIN_HOURS = 1;    // if NO obs points within ±1h, skip that crest entirely
 
 // Method/version tag so you can cleanly rebuild without mixing old scheme
-const METHOD = "crest_anchored_highs_v1";
+const METHOD = "stitched_local_usgs_and_noaa_surrogate_highs_v2";
 
 // -------------------------
 // Helpers
@@ -290,7 +290,11 @@ function buildCrestAnchoredHighEvents({ series, predictedHighs, thresholdsNAVD88
       ft: roundFt(ft),
       type: classifyNAVD(ft, thresholdsNAVD88),
       crest: new Date(crestISO).toISOString(), // predicted crest time (key)
-      kind: "CrestHigh"
+      kind: "CrestHigh",
+      historyAgency: "USGS",
+      historySource: `USGS ${SITE} primary continuous record`,
+      source: "primary-usgs-continuous",
+      localDate: officialCrestLocalDate({ t: best.t })
     });
   }
 
@@ -304,8 +308,8 @@ async function main() {
   const cache = loadJSON(CACHE_PATH);
 
   // Ensure required metadata exists (you already store these)
-  cache.site = cache.site || SITE;
-  cache.parameterCd = cache.parameterCd || PARAM;
+  cache.site = SITE;
+  cache.parameterCd = PARAM;
   cache.datum = cache.datum || "NAVD88";
   cache.peakMinSepMinutes = cache.peakMinSepMinutes || PEAK_MIN_SEP_MINUTES;
 
@@ -317,13 +321,10 @@ async function main() {
     );
   }
 
-  // If method changed, clear events to avoid mixing old peak scheme with crest-anchored scheme
+  // Preserve the immutable pre-local-gauge backfill when the live updater runs.
   if (cache.method !== METHOD) {
-    console.log(`Method changed (${cache.method || "none"} -> ${METHOD}). Clearing events for clean rebuild.`);
+    console.log(`Method metadata changed (${cache.method || "none"} -> ${METHOD}); preserving stitched history.`);
     cache.method = METHOD;
-    cache.events = (Array.isArray(cache.events) ? cache.events : []).filter(event => event?.officialCrestOverride);
-    // Preserve authoritative USGS storm crests across local cache-method rebuilds.
-    // Leave lastProcessedISO as-is; you can run a backfill range to rebuild.
   }
 
   const backfillYear = parseArg("--backfill-year");
