@@ -2580,7 +2580,7 @@ a.brand *{
           </div>
         </div>
 
-        <div class="rangeMeta" id="f48Meta">—</div>
+        <div class="rangeMeta" id="f48Meta" hidden></div>
       </div>
     </div>
 
@@ -3756,8 +3756,7 @@ function updateFloodOutlook48(){
   if(!hasFullCoverage && segs.length){
     f48ListEl.innerHTML += `<div class="event"><div class="eventLeft"><div class="eventWhen">Partial forecast coverage</div><div class="eventSub">${coverageNote} Flood-hour totals include only available periods.</div></div></div>`;
   }
-  f48MetaEl.textContent =
-    `${fmtNiceDate(isoFromMs(t0))} → ${fmtNiceDate(isoFromMs(t1))} · Based on NOAA/PETSS`;
+  f48MetaEl.textContent = "";
 }
 
 
